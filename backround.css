@@ -9,3 +9,7 @@ body {
     background-attachment: fixed; /* Keeps the image fixed in place when scrolling */
     color: #ffffff; /* Text color */
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
