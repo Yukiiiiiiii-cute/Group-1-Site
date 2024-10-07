@@ -1,0 +1,132 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 40px;
+    color: #00000007;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent sidebar to show background */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #00ffee;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #00fbbc;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 0;
+    transition: margin-left 0.5s;
+}
+
+#sidebar.open ~ .main-content {
+    margin-left: 250px;
+}
+
+#sidebar.open {
+    width: 250px;
+}
+
+/* Centered Video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Top-Right Image (Optional if needed) */
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.top-right img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Centered Video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh; /* Set the height of the body to the full viewport height */
+    margin: 0; /* Remove default margin */
+    background-image: url('The\ Art\ of\ Collage\ Education\ Presentation\ in\ Beige\ Gold\ Collage\ Photographic\ Style.jpg'); /* Set your JPEG background image here */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed in place when scrolling */
+    color: #ffffff; /* Text color */
+}
+
+p {
+    text-align: justify; /* Justify text for better readability */
+    margin: 20px; /* Add margin for spacing */
+    font-size: 1.1em; /* Slightly larger font size */
+    line-height: 1.5; /* Increase line height for better spacing */
+    color: #333; /* Dark text color for better contrast */
+}

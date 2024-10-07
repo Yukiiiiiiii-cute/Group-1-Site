@@ -1,0 +1,15 @@
+/* style.css */
+body {
+    cursor: url('imresizer-1728225229347.jpg'), auto; /* Use your custom cursor image */
+}
+
+h1, p {
+    margin: 20px;
+}
+
+#custom-cursor {
+    position: absolute;
+    width: 32px; /* Adjust based on your cursor size */
+    height: 32px; /* Adjust based on your cursor size */
+    pointer-events: none; /* Ensure it doesn't block mouse events */
+}

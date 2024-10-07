@@ -1,0 +1,11 @@
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh; /* Set the height of the body to the full viewport height */
+    margin: 0; /* Remove default margin */
+    background-image: url('backround\ pic\ home.jpg'); /* Set your JPEG background image here */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed in place when scrolling */
+    color: #ffffff; /* Text color */
+}
